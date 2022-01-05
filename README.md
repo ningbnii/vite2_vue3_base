@@ -1,3 +1,3 @@
-# Vue 3 + Vite + vue-router@next
+# Vue 3 + Vite2
 
-自动化路由
+- 自动化路由
