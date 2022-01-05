@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",
+    "postcss-px2vp": "^1.1.2",
     "vite": "^2.7.2",
     "vite-plugin-style-import": "^1.4.1"
   }
