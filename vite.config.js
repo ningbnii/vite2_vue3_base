@@ -34,4 +34,9 @@ export default defineConfig({
     },
   },
   plugins: [vue(), vantStyleImport()],
+  server: {
+    host: "0.0.0.0",
+    port: 3000,
+    https: false,
+  },
 });

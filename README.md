@@ -5,3 +5,4 @@
 - 封装 localStorage
 - 移动端适配 postcss 插件 postcss-px2vp
 - 组件库使用 vant
+- 配置 server，添加 ip 访问
