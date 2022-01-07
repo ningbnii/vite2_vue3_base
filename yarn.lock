@@ -773,6 +773,11 @@ vite@^2.7.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
+vue-meta@^3.0.0-alpha.9:
+  version "3.0.0-alpha.9"
+  resolved "https://registry.nlark.com/vue-meta/download/vue-meta-3.0.0-alpha.9.tgz#304999dc67337245947c2a08d7d94df984864c61"
+  integrity sha1-MEmZ3GczckWUfCoI19lN+YSGTGE=
+
 vue-router@^4.0.12:
   version "4.0.12"
   resolved "https://registry.npmmirror.com/vue-router/download/vue-router-4.0.12.tgz#8dc792cddf5bb1abcc3908f9064136de7e13c460"
