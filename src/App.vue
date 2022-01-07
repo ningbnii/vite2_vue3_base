@@ -17,19 +17,25 @@ useMeta({
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
   width: 100%;
   /* 最大宽度 */
-  max-width: 750px;
-  /* 最小宽度 */
-  min-width: 320px;
+  // max-width: 750px;
+  // /* 最小宽度 */
+  // min-width: 320px;
   margin: 0 auto;
-  font-size: 14px;
   font-family: -apple-system, Helvetica, sans-serif;
-  line-height: 1.5;
-  color: #666;
+  // -webkit-tap-highlight-color: rba(255, 255, 255, 0);
+  // line-height: 1.5;
+  // color: #666;
 }
 
 /*去掉a标签在移动端中点击会出现蓝色遮罩层的效果  设置为transparent 完成透明*/
@@ -70,12 +76,11 @@ a {
   text-decoration: none;
 }
 
-/* 清除浮动 */
-.clearfix::after {
-  content: "";
-  display: block;
-  height: 0;
-  visibility: hidden;
-  clear: both;
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // -webkit-user-modify: read-write-plaintext-only; //-webkit-user-modify有个副作用,就是输入法不再能够输入多个字符
 }
 </style>
