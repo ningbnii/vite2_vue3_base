@@ -8,20 +8,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^0.26.0",
     "axios-retry": "^3.2.4",
-    "less": "^4.1.2",
     "qs": "^6.10.3",
     "vant": "3",
-    "vue": "^3.2.25",
+    "vue": "^3.2.31",
     "vue-meta": "^3.0.0-alpha.9",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.0.1",
+    "@vitejs/plugin-vue": "^2.2.4",
     "less-loader": "^10.2.0",
     "postcss-px2vp": "^1.1.2",
-    "vite": "^2.7.10",
+    "sass": "^1.49.9",
+    "vite": "^2.8.6",
     "vite-plugin-style-import": "^1.4.1"
   }
 }

@@ -1,15 +1,11 @@
 <template>
   <div>入口</div>
   <div>
-    <van-button type="primary" size="small" :to="{ path: '/index/index' }"
-      >跳转/index/index</van-button
-    >
+    <van-button type="primary" size="small" :to="{ path: '/index/index' }">跳转/index/index</van-button>
   </div>
 
   <div class="mt-1">
-    <van-button type="primary" size="small" :to="{ path: '/index/home' }"
-      >跳转/index/home</van-button
-    >
+    <van-button type="primary" size="small" :to="{ path: '/index/home' }">跳转/index/home</van-button>
   </div>
   <div class="content">
     <p>hello</p>
@@ -22,7 +18,7 @@
 //   console.log(res);
 // });
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .content {
   width: 750px;
   height: 200px;

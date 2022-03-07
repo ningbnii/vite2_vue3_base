@@ -1,18 +1,16 @@
 <template>
   <metainfo>
-    <template v-slot:title="{ content }">{{
-      content ? `${content} | 微信部落` : `微信部落`
-    }}</template>
+    <template v-slot:title="{ content }">{{ content ? `${content} | 微信部落` : `微信部落` }}</template>
   </metainfo>
   <router-view></router-view>
 </template>
 <script setup>
-import { useMeta } from "vue-meta";
+import { useMeta } from 'vue-meta'
 useMeta({
-  title: "",
-});
+  title: '',
+})
 </script>
-<style lang="less">
+<style lang="scss">
 * {
   margin: 0;
   padding: 0;
