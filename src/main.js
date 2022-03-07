@@ -1,7 +1,8 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import { Button } from "vant";
-import { createMetaManager } from "vue-meta";
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import { Button } from 'vant'
+import { createMetaManager } from 'vue-meta'
+import 'normalize.css'
 
-createApp(App).use(router).use(Button).use(createMetaManager()).mount("#app");
+createApp(App).use(router).use(Button).use(createMetaManager()).mount('#app')

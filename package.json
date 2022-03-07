@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.26.0",
     "axios-retry": "^3.2.4",
+    "normalize.css": "^8.0.1",
     "qs": "^6.10.3",
     "vant": "3",
     "vue": "^3.2.31",
