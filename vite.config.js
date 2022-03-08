@@ -25,12 +25,7 @@ export default defineConfig(({ mode, command }) => {
   return {
     base: loadEnv(mode, process.cwd()).VITE_BASEURL,
     resolve: {
-      // alias: [
-      //   {
-      //     find: '@',
-      //     replacement: resolve(__dirname, 'src'),
-      //   },
-      // ],
+      // 别名
       alias: {
         '@': resolve('./src'),
       },
@@ -48,6 +43,8 @@ export default defineConfig(({ mode, command }) => {
       },
       postcss: {
         plugins: [
+          // 将 px 单位转换为视口单位的 (vw, vh, vmin, vmax) 的 PostCSS 插件.
+          // vant的设计稿宽度是375，默认的设计稿是750
           px2vp({
             viewportWidth(rule) {
               const file = rule.source?.input.file

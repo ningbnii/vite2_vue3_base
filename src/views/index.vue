@@ -13,8 +13,8 @@
   <input type="text" />
   <button type="">hello</button>
 
-  <div class="header">hello world</div>
-  <a href="https://www.baidu.com">百度</a>
+  <div class="header" circle>hello world</div>
+  <a href="https://www.baidu.com" fz30 ml5>百度</a>
   <van-row>
     <van-col span="8">span: 8</van-col>
     <van-col span="8">span: 8</van-col>

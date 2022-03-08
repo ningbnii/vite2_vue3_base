@@ -24,4 +24,4 @@ yarn build
 - 使用 sass
 - normalize.css
 - layout 布局
-- mock
+- mock，直接在/mock 文件夹下面，创建对应的文件，添加需要的 mock 数据就可以
