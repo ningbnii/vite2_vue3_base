@@ -24,3 +24,4 @@ yarn build
 - 使用 sass
 - normalize.css
 - layout 布局
+- mock

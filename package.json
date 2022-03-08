@@ -20,6 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.4",
     "less-loader": "^10.2.0",
+    "mockjs": "^1.1.0",
     "postcss-px2vp": "^1.1.2",
     "sass": "^1.49.9",
     "vite": "^2.8.6",
