@@ -1,4 +1,5 @@
 import { defineConfig, loadEnv } from 'vite'
+import { viteMockServe } from 'vite-plugin-mock'
 import vue from '@vitejs/plugin-vue'
 import styleImport from 'vite-plugin-style-import'
 import px2vp from 'postcss-px2vp'
@@ -19,16 +20,20 @@ const vantStyleImport = () => {
   })
 }
 
-export default ({ mode }) =>
-  defineConfig({
+export default defineConfig(({ mode, command }) => {
+  const prodMock = true
+  return {
     base: loadEnv(mode, process.cwd()).VITE_BASEURL,
     resolve: {
-      alias: [
-        {
-          find: '@',
-          replacement: resolve(__dirname, 'src'),
-        },
-      ],
+      // alias: [
+      //   {
+      //     find: '@',
+      //     replacement: resolve(__dirname, 'src'),
+      //   },
+      // ],
+      alias: {
+        '@': resolve('./src'),
+      },
     },
     // 大佬方案https://juejin.cn/post/6961737808339795975
     css: {
@@ -53,7 +58,16 @@ export default ({ mode }) =>
         ],
       },
     },
-    plugins: [vue(), vantStyleImport()],
+    plugins: [
+      vue(),
+      vantStyleImport(),
+      viteMockServe({
+        // default
+        mockPath: 'mock',
+        localEnabled: command === 'serve',
+        prodEnabled: command !== 'serve' && prodMock,
+      }),
+    ],
     server: {
       host: '0.0.0.0',
       port: 3000,
@@ -71,4 +85,5 @@ export default ({ mode }) =>
         },
       },
     },
-  })
+  }
+})

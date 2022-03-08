@@ -6,5 +6,5 @@ import request from '@/utils/request'
  * @returns
  */
 export const getUserInfo = (params) => {
-  return request.get('/api/index/getUserInfo', params)
+  return request.get('/api/user/getUserInfo', params)
 }

@@ -22,11 +22,11 @@
   </van-row>
 </template>
 <script setup>
-// import { getUserInfo } from "../api/user";
+import { getUserInfo } from '@/api/user'
 // 请求接口demo
-// getUserInfo({ id: 1 }).then(function (res) {
-//   console.log(res);
-// });
+getUserInfo().then(function (res) {
+  console.log(res)
+})
 </script>
 <style lang="scss" scoped>
 .content {
