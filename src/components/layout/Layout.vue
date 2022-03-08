@@ -1,13 +1,27 @@
-<template></template>
+<template>
+  <section class="c-layout" :class="{ 'c-layout--horizontal': horizontal }">
+    <slot></slot>
+  </section>
+</template>
 
 <script>
-import { defineComponent, reactive, toRefs } from 'vue'
-
-export default defineComponent({
-  name: '',
-  props: {},
-  components: {},
-})
+export default {
+  name: 'CLayout',
+  props: {
+    horizontal: {
+      type: Boolean,
+      default: false,
+    },
+  },
+}
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@include b(c-layout) {
+  display: flex;
+  flex-direction: column;
+  @include m(horizontal) {
+    flex-direction: row;
+  }
+}
+</style>

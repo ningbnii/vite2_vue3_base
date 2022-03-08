@@ -1,18 +1,18 @@
 <template>
-  <div class="c-aside">
+  <main class="c-content">
     <slot></slot>
-  </div>
+  </main>
 </template>
 
 <script>
 export default {
-  name: 'CAside',
+  name: 'CContent',
 }
 </script>
 
 <style scoped lang="scss">
-@include b(c-aside) {
+@include b(c-content) {
   overflow: auto;
-  flex-shrink: 0; // 防止被压缩
+  flex: 1;
 }
 </style>
