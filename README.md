@@ -20,6 +20,16 @@ yarn build
 - 组件库使用 vant
 - 配置 server，添加 ip 访问
 - title 动态修改
+
+```
+<script setup>
+import { useMeta } from "vue-meta";
+useMeta({
+  title: "用户中心",
+});
+</script>
+```
+
 - 添加开发环境和生成环境中 base 的区分，生产环境.env，开发环境.env.production
 - 使用 sass
 - normalize.css
