@@ -38,6 +38,7 @@ export default defineConfig(({ mode, command }) => {
           additionalData: `
           @import "@/style/settings/var.scss";
           @import "@/style/tools/_sassMagic.scss";
+          @import "@/style/theme/index.scss";
           `,
         },
       },

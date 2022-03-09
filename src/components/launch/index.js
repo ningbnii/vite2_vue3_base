@@ -1,3 +1,3 @@
-import BoxCenter from './box-center.vue'
+import CLaunch from './launch.vue'
 
-export default BoxCenter
+export default CLaunch
