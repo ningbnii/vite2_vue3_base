@@ -106,7 +106,7 @@ let brandList = ref([])
 
 const list = [
   {
-    path: '/mall/home',
+    path: '/',
     text: '首页',
     active: true,
   },
