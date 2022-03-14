@@ -14,6 +14,9 @@ useMeta({
 })
 onMounted(() => {
   window.document.documentElement.setAttribute('data-theme', 'default')
+  window.document.ontouchstart = function (e) {
+    // e.preventDefault()
+  }
 })
 </script>
 <style lang="scss"></style>

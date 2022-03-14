@@ -2,12 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 body,
@@ -24,6 +18,20 @@ html {
   // color: #666;
   background-color: $background-color-primary;
   color: $color-text-primary;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-backface-visibility: hidden;
+  -webkit-user-drag: none;
+  transform: translate3d(0, 0, 0);
 }
 
 /*去掉a标签在移动端中点击会出现蓝色遮罩层的效果  设置为transparent 完成透明*/
