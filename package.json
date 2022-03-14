@@ -23,6 +23,7 @@
     "mockjs": "^1.1.0",
     "postcss-px2vp": "^1.1.2",
     "sass": "^1.49.9",
+    "unplugin-vue-components": "^0.18.0",
     "vite": "^2.8.6",
     "vite-plugin-mock": "^2.9.6",
     "vite-plugin-style-import": "^1.4.1"

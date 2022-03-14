@@ -36,3 +36,4 @@ useMeta({
 - layout 布局
 - mock，直接在/mock 文件夹下面，创建对应的文件，添加需要的 mock 数据就可以
 - svgicon，https://iconpark.oceanengine.com/home
+- vant 组件自动导入

@@ -4,6 +4,8 @@ import vue from '@vitejs/plugin-vue'
 import styleImport from 'vite-plugin-style-import'
 import px2vp from 'postcss-px2vp'
 import { resolve } from 'path'
+import Components from 'unplugin-vue-components/vite'
+import { VantResolver } from 'unplugin-vue-components/resolvers'
 
 const vantStyleImport = () => {
   const libraryName = 'vant'
@@ -64,6 +66,10 @@ export default defineConfig(({ mode, command }) => {
         localEnabled: command === 'serve',
         prodEnabled: command !== 'serve' && prodMock,
       }),
+      // 组件自动导入
+      Components({
+        resolvers: [VantResolver()],
+      }),
     ],
     server: {
       host: '0.0.0.0',
@@ -76,7 +82,11 @@ export default defineConfig(({ mode, command }) => {
         output: {
           manualChunks(id) {
             if (id.includes('/node_modules/')) {
-              return id.toString().split('node_modules/')[1].split('/')[0].toString()
+              return id
+                .toString()
+                .split('node_modules/')[1]
+                .split('/')[0]
+                .toString()
             }
           },
         },
