@@ -1,10 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import { Button, Col, Row } from 'vant'
 import { createMetaManager } from 'vue-meta'
 import 'normalize.css'
-import '@/style/index.scss'
-import Mui from '@/components'
+import VuePageStack from 'vue-page-stack'
+import vant from 'vant'
 
-createApp(App).use(Mui).use(router).use(createMetaManager()).mount('#app')
+const app = createApp(App)
+app.use(router)
+app.use(createMetaManager())
+app.use(VuePageStack, { router })
+app.use(vant)
+app.mount('#app')
